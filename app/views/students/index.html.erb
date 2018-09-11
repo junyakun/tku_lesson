@@ -1,0 +1,9 @@
+<h1>TKUCとは</h1>
+<p>講義について評価する場です。</p>
+
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= link_to student.lesson, student_path(student)%></li>
+  <% end %>
+</ul>
